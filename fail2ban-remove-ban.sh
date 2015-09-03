@@ -26,7 +26,7 @@ do
 	    JAILS=`fail2ban-client status | grep "Jail list" | sed -E 's/^[^:]+:[ \t]+//' | sed 's/,//g'`
 		for JAIL in $JAILS
 		do
-		  RESULT=`fail2ban-client set $JAIL unbanip 196.210.84.111 2>&1`
+		  RESULT=`fail2ban-client set $JAIL unbanip $var 2>&1`
 
 		  if [[ "$RESULT" == *"NOK"* ]]; then
 		    echo "$var NOT banned in $JAIL";
