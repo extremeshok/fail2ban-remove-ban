@@ -1,6 +1,8 @@
 # fail2ban-remove-ban
 Remove Ban / Unban an IP from all Fail2ban Jails
 
+# Maintained and provided by https://eXtremeSHOK.com
+
 ## Usage
 -h  Displays this help screen
 
